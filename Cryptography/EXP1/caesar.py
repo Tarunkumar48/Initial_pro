@@ -1,5 +1,15 @@
 # CAESAR Cipher encryption and decryption
 
+# from pycipher import Caesar
+# plaintext = input("Enter plaintext: ")
+# shift = int(input("Enter shift value: "))
+
+# ciphertext = Caesar(shift).encipher(plaintext)
+# decrypted = Caesar(shift).decipher(ciphertext)
+
+# print("\nCiphertext:", ciphertext)
+# print("Decrypted text:", decrypted)
+
 def encrypt_caesar(plaintext, shift):
     ciphertext = ""
     for char in plaintext:

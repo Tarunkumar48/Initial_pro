@@ -65,46 +65,19 @@
 #     print(f"Decrypted: {decrypted_message}")
 
 
-from pycipher import Vigenere
+# SIMPLE PYTHON CODE
 
+from pycipher import Vigenere
 plaintext = input("Enter plaintext: ")
 key = input("Enter key: ").upper()
 
 ciphertext = Vigenere(key).encipher(plaintext)
 decrypted = Vigenere(key).decipher(ciphertext)
 
-print("\nCiphertext: , ciphertext)
-print("Decrypted text:", decrypted)
+print("\nCiphertext: ", ciphertext)
+print("Decrypted text: ", decrypted)
 
-
-
-from pycipher import Caesar
-plaintext = input("Enter plaintext: ")
-shift = int(input("Enter shift value: "))
-
-ciphertext = Caesar(shift).encipher(plaintext)
-decrypted = Caesar(shift).decipher(ciphertext)
-
-print("\nCiphertext:", ciphertext)
-print("Decrypted text:", decrypted)
-
-
-
-from pycipher import Railfence
-plaintext = input("Enter plaintext: ")
-rails = int(input("Enter number of rails: "))
-
-ciphertext = Railfence(rails).encipher(plaintext)
-decrypted = Railfence(rails).decipher(ciphertext)
-
-print("\nCiphertext:", ciphertext)
-print("Decrypted text:", decrypted)
-
-
-
-
-
-
+#-------------------------------------------------------------
 
 import string
 

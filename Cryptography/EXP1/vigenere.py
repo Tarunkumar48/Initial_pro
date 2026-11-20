@@ -65,6 +65,8 @@
 #     print(f"Decrypted: {decrypted_message}")
 
 
+
+
 # SIMPLE PYTHON CODE
 
 from pycipher import Vigenere
@@ -77,21 +79,3 @@ decrypted = Vigenere(key).decipher(ciphertext)
 print("\nCiphertext: ", ciphertext)
 print("Decrypted text: ", decrypted)
 
-#-------------------------------------------------------------
-
-import string
-
-plain_alphabet = string.ascii_uppercase
-cipher_alphabet = "QWERTYUIOPASDFGHJKLZXCVBNM"
-
-plaintext = input("Enter plaintext: ")
-
-encrypt = str.maketrans(plain_alphabet + plain_alphabet.lower(),cipher_alphabet + cipher_alphabet.lower())
-
-decrypt = str.maketrans(cipher_alphabet + cipher_alphabet.lower(), lain_alphabet + plain_alphabet.lower())
-
-ciphertext = plaintext.translate(encrypt)
-decrypted = ciphertext.translate(decrypt)
-
-print("\nCiphertext:", ciphertext)
-print("Decrypted text:", decrypted)
